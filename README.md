@@ -74,6 +74,8 @@ code .
 ##### Step B (REQUIRED): Install styled-components dependency:
 ```nom
 npm i styled-components
+```
+```nom
 npm i @types/styled-components -D
 ```
 
@@ -199,7 +201,11 @@ Actions -> failed deploy -> re-run-job failed jobs
 #### BONUS: For code changes
 ```git
 git add . 
+```
+```git
 git commit -m "fix: some bug" 
+```
+```git
 git push
 ```
 

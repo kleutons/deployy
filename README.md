@@ -179,7 +179,11 @@ jobs:
 #### 05. Push
 ```git
 git add . 
+```
+```git
 git commit -m "add: deploy workflow" 
+```
+```git
 git push
 ```
 

@@ -18,10 +18,65 @@
 ### Follow the steps below on how to deploy a React app:
 
 #### 01. Create a React app
+##### For Creating React Without Typescript:
 ```npm
 npx create-react-app [REPO_NAME]
+```
+##### For Creating React With Typescript:
+```npm
+npx create-react-app [REPO_NAME] --template-typescript
+```
+--------------------------------------------
+Open the folder
+```npm
 cd [REPO_NAME]
 ```
+Open in VsCode
+```npm
+code .
+```
+#### 01.1  For those who are going to use TypeScript, follow these steps:
+##### Step A: Create [tsconfig.json] file, inside the main folder, paste the code below inside the file:
+```json
+  {
+    "compilerOptions": 
+    {
+      "target": "es5",
+      "lib": [
+        "dom",
+        "dom.iterable",
+        "esnext"
+      ],
+      "allowJs": true,
+      "skipLibCheck": true,
+      "esModuleInterop": true,
+      "allowSyntheticDefaultImports": true,
+      "strict": true,
+      "forceConsistentCasingInFileNames": true,
+      "noFallthroughCasesInSwitch": true,
+      "module": "esnext",
+      "moduleResolution": "node",
+      "resolveJsonModule": true,
+      "isolatedModules": true,
+      "noEmit": true,
+      "jsx": "react-jsx"
+    },
+    "include": [
+      "src"
+    ]
+  }
+```
+##### Step A Continued (OPTIONAL), Create a file called [index.d.ts] inside the ./src folder, this file serves to declare file extension modules, copy the example below to declare .png files
+```ts
+  declare module '*.png';
+```
+
+##### Step B: Install styled-components dependency:
+```nom
+npm i styled-components
+npm i @types/styled-components -D
+```
+
 
 #### 02. Create a new repository on GitHub and initialize GIT
 ```git
@@ -38,7 +93,7 @@ git push -u origin main
 "homepage": "https://[USER].github.io/[REPO_NAME]/"
 ```
 
-#### 04. Create ./github/workflows/deploy.yml and add the code bellow
+#### 04. Create ./.github/workflows/deploy.yml and add the code bellow
 ##### On your file create: 
 # ![aa](https://user-images.githubusercontent.com/88905492/217887391-1cf07688-37bd-434b-8294-503ec65dca6f.png)
 

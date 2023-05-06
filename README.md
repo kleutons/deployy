@@ -71,7 +71,7 @@ code .
   declare module '*.png';
 ```
 
-##### Step B: Install styled-components dependency:
+##### Step B (REQUIRED): Install styled-components dependency:
 ```nom
 npm i styled-components
 npm i @types/styled-components -D

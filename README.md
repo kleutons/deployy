@@ -79,14 +79,31 @@ npm i @types/styled-components -D
 
 
 #### 02. Create a new repository on GitHub and initialize GIT
+start and create git
 ```git
-git init 
+git init
+```
+add all files staging area
+```git
 git add . 
-git commit -m "add: initial files" 
+```
+add comment commit
+```git
+git commit -m "first commit" 
+```
+branch name 
+```git
 git branch -M main 
+```
+call remote repository
+```git
 git remote add origin https://github.com/[USER]/[REPO_NAME] 
+```
+push to remote repository on branch 'main'
+```git
 git push -u origin main
 ```
+
 
 #### 03. Setup homepage on package.json
 ```js

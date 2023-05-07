@@ -24,7 +24,7 @@ npx create-react-app [REPO_NAME]
 ```
 ##### For Creating React With Typescript:
 ```npm
-npx create-react-app [REPO_NAME] --template-typescript
+npx create-react-app [REPO_NAME] --template typescript
 ```
 --------------------------------------------
 Open the folder
@@ -35,7 +35,7 @@ Open in VsCode
 ```npm
 code .
 ```
-#### 01.1  For those who are going to use TypeScript, follow these steps:
+#### 01.1 (OPTIONAL) For those who are going to use TypeScript, follow these steps:
 ##### Step A: Create [tsconfig.json] file, inside the main folder, paste the code below inside the file:
 ```json
   {
@@ -71,7 +71,7 @@ code .
   declare module '*.png';
 ```
 
-##### Step B (REQUIRED): Install styled-components dependency:
+##### Step B (OPTIONAL): Install styled-components dependency:
 ```nom
 npm i styled-components
 ```

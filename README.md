@@ -73,6 +73,7 @@ code .
 
 ##### Step B (OPTIONAL): Install styled-components dependency:
 ```nom
+npm config set legacy-peer-deps true 
 npm i styled-components
 ```
 ```nom
